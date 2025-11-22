@@ -30,6 +30,23 @@ java -cp bin MainMenu
 
 <br>
 
+## Referências
+Para maior compreensão do funcionamento e implementação dos algoritmos:
+
+https://www.geeksforgeeks.org/dsa/sorting-algorithms/
+
+https://www.geeksforgeeks.org/dsa/bubble-sort-algorithm/
+
+https://www.geeksforgeeks.org/dsa/insertion-sort-algorithm/
+
+https://www.geeksforgeeks.org/dsa/merge-sort/
+
+https://www.geeksforgeeks.org/dsa/quick-sort-algorithm/
+
+https://www.geeksforgeeks.org/dsa/selection-sort-algorithm-2/
+
+<br>
+
 ## Autoria
 Beatriz Almeida de Souza Silva
 
