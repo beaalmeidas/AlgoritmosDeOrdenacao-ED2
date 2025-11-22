@@ -17,7 +17,7 @@ public class InsertionSort {
 			}
 
 			vetor[ indiceJ + 1 ] = aux;
-		} // FOR ELEMENTOS
+		}
 	}
 
 	@Override
