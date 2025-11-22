@@ -1,4 +1,4 @@
-package ed2.projeto.algoritmosordenacao;
+package algorithms;
 
 /**
  * @author Hilario Tomaz Alves de Oliveira

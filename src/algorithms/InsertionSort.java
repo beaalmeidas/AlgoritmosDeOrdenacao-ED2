@@ -1,44 +1,27 @@
-
-package ed2.projeto.algoritmosordenacao;
+package algorithms;
 
 /**
- * 
  * @author Hilario Tomaz Alves de Oliveira
- *
- */
+*/
 
-public class InsertionSort implements IAlgoritmoOrdenacao {
+public class InsertionSort {
+	public void ordenarVetor(int[] vetor) {
+		for(int i = 1; i < vetor.length; i++) {
+			int aux = vetor[i];
+			int indiceJ = i - 1;
 
-  @Override
-	
-  public void ordenarVetor(int[] vetor) {
+			while ( indiceJ >= 0 && aux < vetor[indiceJ] ) {
+				vetor[indiceJ + 1] = vetor[indiceJ];
 
-    for(int i = 1; i < vetor.length; i++) {
+				indiceJ = indiceJ - 1;
+			}
 
-       int aux = vetor[i];
-		     
-       int indiceJ = i - 1;
-		       
-       while ( indiceJ >= 0 && aux < vetor[indiceJ] ) {
-		            
-         vetor[indiceJ + 1] = vetor[indiceJ];
-		         
-         indiceJ = indiceJ - 1;
-		               
-       }
-		          
-       vetor[ indiceJ + 1 ] = aux;
+			vetor[ indiceJ + 1 ] = aux;
+		} // FOR ELEMENTOS
+	}
 
-     } // FOR ELEMENTOS
-			     
-  }
-
-  @Override
-	
-  public String toString() {
-	
-    return "InsertionSort";
-    
-  }
-
+	@Override
+	public String toString() {
+		return "InsertionSort";
+	}
 }
