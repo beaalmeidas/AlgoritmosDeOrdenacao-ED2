@@ -1,10 +1,22 @@
+import algorithms.BubbleSort;
+import algorithms.InsertionSort;
+import algorithms.MergeSort;
+import algorithms.QuickSort;
+import algorithms.SelectionSort;
 import java.util.Scanner;
+import utils.Utils;
 
 public class MainMenu {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int opcao;
+
+        BubbleSort bubble = new BubbleSort();
+        InsertionSort insertion = new InsertionSort();
+        MergeSort merge = new MergeSort();
+        QuickSort quick = new QuickSort();
+        SelectionSort selection = new SelectionSort();
 
         do {
             System.out.println("\n====== MENU ======");
@@ -19,25 +31,41 @@ public class MainMenu {
             scan.nextLine();
             System.out.print("\n");
 
+            int[] vetor = Utils.gerarVetor(10, 51);
+
             switch (opcao) {
-                case 1 -> System.out.println("Você escolheu: Bubble Sort");
-                // chamar função aqui
+                case 1: 
+                    System.out.println("Você escolheu: Bubble Sort");
+                    bubble.ordenarVetor(vetor);
+                    break;
 
-                case 2 -> System.out.println("Você escolher: Insertion Sort");
-                // chamar função aqui
+                case 2: 
+                    System.out.println("Você escolheu: Insertion Sort");
+                    insertion.ordenarVetor(vetor);
+                    break;
+                    
+                    case 3: 
+                    System.out.println("Você escolheu: Merge Sort");
+                    merge.ordenarVetor(vetor);
+                    break;
+                    
+                    case 4: 
+                    System.out.println("Você escolheu: Quick Sort");
+                    quick.ordenarVetor(vetor);
+                    break;
 
-                case 3 -> System.out.println("Você escolheu: Merge Sort");
-                // chamar função aqui
+                case 5:
+                    System.out.println("Você escolheu: Selection Sort");
+                    selection.ordenarVetor(vetor);
+                    break;
 
-                case 4 -> System.out.println("Você escolheu: Quick Sort");
-                // chamar função aqui
+                case 6:
+                    System.out.println("Saindo...");
+                    break;
 
-                case 5 -> System.out.println("Você escolheu: Selection Sort");
-                // chamar função aqui
-
-                case 6 -> System.out.println("Saindo...");
-
-                default -> System.out.println("Opção inválida! Tente novamente.");
+                default:
+                    System.out.println("Opção inválida! Tente novamente.");
+                    break;
             }
 
             System.out.println();

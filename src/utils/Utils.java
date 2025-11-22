@@ -1,5 +1,5 @@
 
-package ed2.projeto.algoritmosordenacao;
+package utils;
 
 import java.util.Random;
 
