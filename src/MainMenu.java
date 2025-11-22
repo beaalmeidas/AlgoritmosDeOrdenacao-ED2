@@ -7,7 +7,7 @@ public class MainMenu {
         int opcao;
 
         do {
-            System.out.println("====== MENU ======");
+            System.out.println("\n====== MENU ======");
             System.out.println("1. Bubble Sort");
             System.out.println("2. Insertion Sort");
             System.out.println("3. Merge Sort");
@@ -15,8 +15,9 @@ public class MainMenu {
             System.out.println("5. Selection Sort");
             System.out.println("6. Encerrar");
             System.out.print("Escolha uma opção: ");
-            
             opcao = scan.nextInt();
+            scan.nextLine();
+            System.out.print("\n");
 
             switch (opcao) {
                 case 1 -> System.out.println("Você escolheu: Bubble Sort");
